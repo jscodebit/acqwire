@@ -550,6 +550,7 @@ p {
 .single-slide-item:after{
 	content: "";
     position: absolute;
+    background: rgba(127, 183, 223, 0.5);
     left: 0;
     top: 0;
     width: 100%;
