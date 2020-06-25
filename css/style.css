@@ -1419,7 +1419,11 @@ p {
     transform: scaleX(1.0) scaleY(1.0);
     transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
 }
-
+.modal.show-modal .container-fluid .form-control {
+    height: 36px;
+    line-height: 1em;
+    padding: 6px 12px;
+}
 .modal.show-modal .container-fluid .col-md-4 {
     padding-right: 0;
 }
