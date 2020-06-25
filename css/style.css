@@ -109,7 +109,6 @@ ul {
 p {
     font-weight: 400;
 	font-family: 'Poppins', sans-serif;
-    margin: 0;
     font-size: 15px;
     color: #333333;
     letter-spacing: 0;
@@ -123,6 +122,22 @@ p {
 .dark_bg{
 	background: #1d293e;
 }
+.bold{
+    font-weight: 700;
+}
+.highlight-yellow{
+    background-color: yellow;
+}
+.text-sm{
+    font-size: 10px;
+}
+
+.d-3 {
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 1.5em;
+}
+
 /*START PRELOADER DESIGN*/
 .preloader {
   position: fixed;
@@ -415,13 +430,17 @@ p {
     color: var(--primary-color) !important;
     background-color: transparent;
 }
-.navbar-default .navbar-nav > li > a, .navbar-default .navbar-nav > li.nav-item.dropdown.open > a{
+.navbar-default .navbar-nav > li > a, 
+.navbar-default .navbar-nav > li.nav-item.dropdown.open > a,
+.navbar-default .navbar-nav > li > button{
     color: #fff;
     font-size: 15px;
     font-weight: 600;
     padding: 15px;
     text-transform: uppercase;
     transition: all 0.3s ease;
+    border: 0;
+    outline: 0;
 }
 
 /* Portrait and Landscape */
@@ -447,6 +466,8 @@ p {
 }
 .navbar-default .navbar-nav > li > a:focus,
 .navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > button:hover,
+.navbar-default .navbar-nav > li > button:focus,
 #nav li.current a {
 	color: var(--primary-color);
 	background-color: transparent;
@@ -474,18 +495,26 @@ p {
     width: 100%;
     animation: fadeInDown 1s both 0.2s;
 }
-.main_header.sticky_menu .navbar-nav > li > a {
+.main_header.sticky_menu .navbar-nav > li > a,
+.main_header.sticky_menu .navbar-nav > li > button {
 	color: #000 !important;
 	transition: all 0.3s ease;
 }
-.main_header.dark_bg_menu.sticky_menu .navbar-nav > li > a{
+.main_header.dark_bg_menu.sticky_menu .navbar-nav > li > a,
+.main_header.dark_bg_menu.sticky_menu .navbar-nav > li > button{
 	color: #fff !important;
 	transition: all 0.3s ease;
 }
-.main_header.sticky_menu .navbar-nav > li > a:hover{ color: var(--primary-color) !important }
+.main_header.sticky_menu .navbar-nav > li > a:hover,
+.main_header.sticky_menu .navbar-nav > li > button:hover{ 
+    color: var(--primary-color) !important 
+}
 .main_header.sticky_menu .navbar-nav>.active>a, 
 .main_header.sticky_menu .navbar-nav>.active>a:hover,
-.main_header.sticky_menu .navbar-nav>.active>a:focus{
+.main_header.sticky_menu .navbar-nav>.active>a:focus,
+.main_header.sticky_menu .navbar-nav>.active>button, 
+.main_header.sticky_menu .navbar-nav>.active>button:hover,
+.main_header.sticky_menu .navbar-nav>.active>button:focus{
     color: var(--primary-color) !important;
     background-color: transparent;
 }
@@ -1334,5 +1363,78 @@ p {
 /*
 * ----------------------------------------------------------------------------------------
 * 14. END COPYRIGHT DESIGN
+* ----------------------------------------------------------------------------------------
+*/
+
+/*
+* ----------------------------------------------------------------------------------------
+* 14. START DIALOG BOX DESIGN
+* ----------------------------------------------------------------------------------------
+*/
+.checkbox-inline {
+    margin-left: 10px;
+}
+.modal {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    visibility: hidden;
+    transform: scaleX(1.1) scaleY(1.1);
+    transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+    font-family: sans-serif;
+}
+.modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 1rem 1.5rem;
+    width: 60%;
+    border-radius: 0.5rem;
+}
+
+.close-button {
+    float: right;
+    width: 1.5rem;
+    line-height: 1.5rem;
+    text-align: center;
+    cursor: pointer;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+}
+.close-button:hover {
+    color: var(--primary-color);
+}
+.show-modal {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+    transform: scaleX(1.0) scaleY(1.0);
+    transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+}
+
+.modal.show-modal .container-fluid .col-md-4 {
+    padding-right: 0;
+}
+
+@media only screen and (max-width: 50rem) {
+    h1 {
+        font-size: 1.5rem;
+    }
+    .modal-content {
+        width: calc(100% - 5rem);
+    }
+}
+  
+/*
+* ----------------------------------------------------------------------------------------
+* 14. END DIALOG BOX DESIGN
 * ----------------------------------------------------------------------------------------
 */
