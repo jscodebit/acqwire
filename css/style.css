@@ -1254,87 +1254,6 @@ p {
 
 /*
 * ----------------------------------------------------------------------------------------
-* 12. START CONTACT DESIGN
-* ----------------------------------------------------------------------------------------
-*/
-.single_contact{
-	padding: 10px 10px 10px 10px;
-	border: 1px solid #e3e3e3;
-}
-.dark_bg .single_contact{
-	border: 1px solid #384967;
-}
-.single_contact ul li{
-    list-style: none;
-    line-height: 60px;
-}
-.dark_bg .single_contact ul li{
-	color: #fff;
-}
-.single_contact h3{
-    font-size: 30px;
-    margin: 10px 10px 10px 10px;
-    color: #222;
-}
-.dark_bg .single_contact h3{
-	color: #fff;
-}
-.single_contact p{
-	margin-bottom: 10px;
-	letter-spacing: .2px;
-	font-size: 14px;
-	margin: 0;
-	margin-bottom: 20px;
-	line-height: 20x;
-}
-.single_contact ul{
-	margin:0;
-	padding:0;
-}
-.sing_contact_iteam i{
-	margin: 10px 10px 10px 10px;
-	color: #fff;
-	width: 40px;
-	height: 40px;
-	background: var(--primary-color);
-	line-height: 40px;
-	text-align: center;
-	border-radius: 50%;
-}
-.contact_form .form-control{
-    margin-bottom: 10px;
-}
-.form-control{
-	border-color: #e3e3e3;
-	height: 45px;
-	line-height: 45px;
-	padding: 10px 15px;
-	border-radius: 0;
-	transition: 0.5s;
-}
-.dark_bg .form-control{
-	background: transparent;
-	border-color: #384967;
-}
-.form-control:focus{
-	box-shadow: none;
-	border-color: var(--primary-color);
-}
-.contact_form textarea.form-control{
-	height: 180px;
-}
-.contact_form_btn .ct_btn {
-    padding: 18px 36px;
-    margin: 30px 0;
-}
-/*
-* ----------------------------------------------------------------------------------------
-* 12. END CONTACT DESIGN
-* ----------------------------------------------------------------------------------------
-*/
-
-/*
-* ----------------------------------------------------------------------------------------
 * 14. START COPYRIGHT DESIGN
 * ----------------------------------------------------------------------------------------
 */
@@ -1419,11 +1338,7 @@ p {
     transform: scaleX(1.0) scaleY(1.0);
     transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
 }
-.modal.show-modal .container-fluid .form-control {
-    height: 36px;
-    line-height: 1em;
-    padding: 6px 12px;
-}
+
 .modal.show-modal .container-fluid .col-md-4 {
     padding-right: 0;
 }
