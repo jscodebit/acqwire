@@ -81,7 +81,7 @@ body {
     line-height: 26px;
     font-weight: 400;
     letter-spacing: 0.5px;
-    color: #333333;
+    color: #000000;
     overflow-x: hidden;
 }
 h1,
@@ -468,9 +468,9 @@ p {
 
 }
 
-.navbar-default .navbar-nav > li:nth-child(n-1) > button {
+/* .navbar-default .navbar-nav > li:nth-child(n-1) > button {
     text-decoration-line: underline;
-}
+} */
 .navbar-default .navbar-nav>.active>a,
 .navbar-default .navbar-nav>.active>a:focus,
 .navbar-default .navbar-nav>.active>a:hover{
@@ -637,12 +637,15 @@ p {
 	letter-spacing: 2px;
 	text-transform: uppercase;
     margin-bottom: 10px;
-    margin-top: 3em;
+    margin-top: 1.5em;
 }
 .single_slide_item_button{
-    margin-top: 5em;
+    margin-top: 2em;
 }
-.single-slide-item p{
+.single_slide_item_button p {
+    color: #fff;
+}
+.single-slide-item .caption{
     color: #fff;
     text-transform: capitalize;
     margin-bottom: 50px;
@@ -793,7 +796,7 @@ p {
 * ----------------------------------------------------------------------------------------
 */
 .single-service{
-    padding: 40px 30px;
+    padding: 30px 30px;
 	box-shadow: 0px 17px 60px #00000012;
 	background: #fff;
 	border-radius: 4px;
@@ -837,7 +840,7 @@ p {
 }
 .single-service span.program-card-header {
     font-size: 20px;
-    color: #333333;
+    color: #000;
     font-weight: 600;
     margin-left: 25px;
 	transition: all 0.4s ease;
@@ -867,7 +870,7 @@ p {
 */
 .program-card-wrapper {
     display: table;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
 }
 .single-service .program-discount {
     margin-bottom: 5px;
@@ -889,12 +892,14 @@ p {
 
 .courses-container .round label {
     margin-left: 28px;
-    margin-top: 5px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    font-weight: 600;
 }
 
 .courses-container .round label::before {        
-    width: 22px;
-    height: 22px;
+    width: 20px;
+    height: 20px;
     content: '';
     border-radius: 50%;
     position: absolute;
@@ -910,11 +915,11 @@ p {
     border-top: none;
     border-right: none;
     content: "";
-    height: 6px;
-    left: 6px;
+    height: 5px;
+    left: 5px;
     opacity: 0;
     position: absolute;
-    top: 14px;
+    top: 13px;
     transform: rotate(-45deg);
     width: 11px;
 }
@@ -936,6 +941,58 @@ p {
 
 .courses-container .round input[type="checkbox"]:checked + label:after {
     opacity: 1;
+}
+
+.chips-container {
+    margin: 15px 0 20px;
+}
+
+.chip{
+    display: inline-flex;
+    flex-direction: row;
+    background-color: #e5e5e5;
+    border: none;
+    cursor: default;
+    height: 22px;
+    outline: none;
+    padding: 0;
+    margin: 5px 2px 5px 0;
+    font-size: 14px;
+    color: #333333;
+    white-space: nowrap;
+    align-items: center;
+    border-radius: 16px;
+    vertical-align: middle;
+    text-decoration: none;
+    justify-content: center;
+}
+.chip-head{
+    display: flex;
+    position: relative;
+    overflow: hidden;
+    background-color: #d9534f;
+    font-size: 1.25rem;
+    flex-shrink: 0;
+    align-items: center;
+    user-select: none;
+    border-radius: 50%;
+    justify-content: center;
+    width: 22px;
+    color: #fff;
+    height: 22px;
+    font-size: 12px;
+    margin-right: -4px;
+}
+.chip-content{
+    cursor: inherit;
+    display: flex;
+    font-size: 12px;
+    font-weight: 500;
+    align-items: center;
+    user-select: none;
+    white-space: nowrap;
+    padding-left: 12px;
+    padding-right: 12px;
 }
 
 /* .program-card-wrapper .card-right-block {
@@ -1442,7 +1499,7 @@ rgba(127, 183, 223, 0.5) */
     line-height: 50px;
     border-radius: 50%;
     background: #ffffff;
-    border: 1px solid #ffffff;
+    border: 1px solid var(--primary-color);
     text-align: center;
     transition: all 0.4s ease;
     font-size: 14px;
@@ -1452,7 +1509,9 @@ rgba(127, 183, 223, 0.5) */
 }
 .single_contact{
 	padding: 10px 10px 10px 10px;
-	border: 1px solid #e3e3e3;
+    border: 1px solid #f1c740;
+    background-color: #f1c740;
+    border-radius: 4px;
 }
 .dark_bg .single_contact{
 	border: 1px solid #384967;
