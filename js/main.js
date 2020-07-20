@@ -75,25 +75,31 @@
 		/*END COUNDOWN JS */
 		
 		// Owl Carousel for Testimonials	
-			$('#testimonial-slider').owlCarousel({
-				loop:true,
-				margin:10,
-				nav:false,
-				dots: true,
-				autoPlay:true,
-				item: 1,
-				responsive:{
-					0:{
-						items:1
-					},
-					6000:{
-						items:1
-					},
-					1000:{
-						items:1
-					}
-				}
-			});	
+			// $('#testimonial-slider').owlCarousel({
+			// 	loop:true,
+			// 	margin:10,
+			// 	nav:false,
+			// 	dots: true,
+			// 	autoPlay:true,
+			// 	autoplayTimeout:1000,
+    		// 	autoplayHoverPause:true,
+			// 	items: 1,
+			// 	pagination:true,
+			// 	responsive:{
+			// 		0:{
+			// 			items:1,
+			// 			nav:true
+			// 		},
+			// 		6000:{
+			// 			items:1,
+			// 			nav:true
+			// 		},
+			// 		1000:{
+			// 			items:1,
+			// 			nav:true
+			// 		}
+			// 	}
+			// });	
 					
 	}); 	
 	
@@ -133,7 +139,19 @@
     
         trigger.addEventListener("click", toggleModal);
         closeButton.addEventListener("click", toggleModal);
-        window.addEventListener("click", windowOnClick);
-
+		window.addEventListener("click", windowOnClick);
+		
+		$("#testimonial-slider").owlCarousel({
+			items:1,
+			itemsDesktop:[1000,1],
+			itemsDesktopSmall:[979,1],
+			itemsTablet:[768,1],
+			pagination:true,
+			navigation:false,
+			navigationText:["",""],
+			slideSpeed:1000,
+			singleItem:true,
+			autoPlay:true
+		});
 		     		
 })(jQuery);		

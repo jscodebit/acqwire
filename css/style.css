@@ -456,6 +456,33 @@ p {
     outline: 0;
 }
 
+.navbar-default .navbar-nav > li > .btn{
+    margin: 5px;
+    padding: 10px;
+    outline: none;
+}
+
+.navbar-default .navbar-nav > li > .btn.btn-primary:hover,
+.navbar-default .navbar-nav > li > .btn.btn-primary:focus,
+.navbar-default .navbar-nav > li > .btn.btn-primary:focus:hover {
+    color: #fff;
+    background-color: #0064ac;
+    border-color: #0064ac;
+}
+
+.navbar-default .navbar-nav > li > .btn.btn-warning:hover,
+.navbar-default .navbar-nav > li > .btn.btn-warning:focus,
+.main_header.sticky_menu .navbar-nav> li.active > a.btn.btn-warning{
+    color: #fff !important;
+    background-color: #ec971f !important;
+    border-color: #d58512 !important;
+}
+.main_header.sticky_menu .navbar-nav > li > .btn,
+.main_header.sticky_menu .navbar-nav > li > .btn:hover,
+.main_header.sticky_menu .navbar-nav > li > .btn:focus {
+    color: #000 !important;
+}
+
 /* Portrait and Landscape */
 @media only screen 
   and (min-device-width: 768px) 
@@ -1297,40 +1324,72 @@ rgba(127, 183, 223, 0.5) */
 * ----------------------------------------------------------------------------------------
 */
 .testi_overlay {
-    background: rgba(7, 1, 90, 0.6) none repeat scroll 0 0;
-    padding: 60px 0;
+    background: rgba(0, 0, 0, 0.5) none repeat scroll 0 0;
+    padding: 20px 0;
 }
-.single_testimonial{
-    text-align: center;
+.testi_overlay .partners {
+    margin: 33px 20px;
 }
-.single_testimonial .pic img{
-	width: 85px;
-	width: 85px;
-	display: inline-block;
-}
-.single_testimonial .pic{
-    margin-bottom: 35px;
-}
-.single_testimonial .pic img{
-	background: #fff;
+.testi_overlay .partners img {
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+    border: 1px solid #fff;
     border-radius: 50%;
 }
-.single_testimonial .testimonial-review{
+.testimonial{
+    /* border: 1px solid #c9ced3;
+    border-top: 3px solid #c9ced3; */
+    padding: 20px 25px 20px;
+    position: relative;
+}
+.testimonial .description:after{
+    content: "\f10d";
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    /* font-family: "Font Awesome 5 Free"; */
+    font-weight: 900;
+    font-size: 30px;
+    color: var(--primary-color);
+    position: absolute;
+    top: 125px;
+    left: 25px;
+}
+.testimonial .description{
+    font-size: 14px;
+    color: #bdbdbd;
+    line-height:26px;
+}
+.testimonial .pic{
+    width: 100px;
+    height: 100px;
+    position: relative;
+    top: 0;
+    left: 36%;
+    text-align: center;
+}
+.testimonial .pic img{
+    width: 100%;
+    height: auto;
+    border: 1px solid #000;
+    border-radius: 50%;
+}
+.testimonial .testimonial-title{
+    font-size: 20px;
     color: #fff;
-    line-height: 28px;
-    margin-bottom: 14px;
+    position: relative;
+    text-align: center;
 }
-.testimonial-review .testimonial-description {
-    font-style: italic;
-    margin: 15px 0;
-	color: #fff;
+.testimonial .testimonial-title small{
+    font-size: 14px;
+    color: var(--primary-color);
+    margin-top: 7px;
 }
-.single_testimonial .testimonial-title{
-    color:var(--primary-color);
-    font-size: 18px;
-    line-height: 22px;
-	font-weight: 600;
-    text-transform: capitalize;
+.owl-theme .owl-controls .owl-page.active span{
+    background: var(--primary-color);
 }
 /*
 * ----------------------------------------------------------------------------------------
@@ -1467,13 +1526,19 @@ rgba(127, 183, 223, 0.5) */
 */
 .footer-wrapper{
     padding-top: 30px;
+    padding-bottom: 30px;
 }
 .footer-wrapper * {
     color: #fff;
 }
-.footer-wrapper .col-md-3{
-    margin: 10px 0;
-    color: #fff;
+.footer-wrapper .logo-block p{
+    margin-top: 12px;
+}
+.footer-wrapper .email-block h4{
+    margin: 1.5em 0;
+}
+.footer-wrapper .social-media-block p{
+    margin: 18px 0;
 }
 .copyright_area{
     background: #20242a;
@@ -1487,6 +1552,7 @@ rgba(127, 183, 223, 0.5) */
 }
 .copy_text{
     padding: 10px 0;
+    border-top: 1px solid #544f4f;
 }
 .copy_text p{
 	color: #fff;
@@ -1498,14 +1564,18 @@ rgba(127, 183, 223, 0.5) */
     height: 50px;
     line-height: 50px;
     border-radius: 50%;
-    background: #ffffff;
+    background: var(--primary-color);
     border: 1px solid var(--primary-color);
     text-align: center;
     transition: all 0.4s ease;
-    font-size: 14px;
+    font-size: 22px;
     display: inline-block;
-    color: var(--primary-color);
+    color: #fff;
     margin: 10px;
+}
+}
+.copyright {
+    border-top: 1px solid #5a5959;
 }
 .single_contact{
 	padding: 10px 10px 10px 10px;
