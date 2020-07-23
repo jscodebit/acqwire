@@ -6,8 +6,8 @@
 	.pricingTable{margin-bottom: 20px;}
 	.post-slide{margin-bottom: 30px;}
 	.single_footer{margin-bottom: 30px;}
-	.single-slide-item h1{font-size: 38px;}
-	.single-slide-item h2{font-size: 15px;}
+	.slider-section h1{font-size: 38px;}
+	.slider-section h2{font-size: 15px;}
 	.navbar-brand p{font-size: 22px;}
 	.single_about .about_title h2{font-size: 22px; font-weight: 600;}
 	.section_heading h2{font-size: 30px;}
@@ -34,8 +34,8 @@
 	.main_header.sticky_menu .navbar-nav > li > a{color: #fff !important;}
 	.navbar-default .navbar-nav > li > a{color: #fff !important; font-size: 11px; font-weight: 600; padding: 0; margin-top: 7px; margin-left: 26px; text-transform: uppercase; transition: all 0.3s ease;}
 	nav#navbar{background: #000 none repeat scroll 0 0;padding-bottom: 15px;padding-right: 15px;padding-top: 15px;position: absolute;	right: 15px;text-align: center;top: 35px;width: 280px;}
-	.single-slide-item h1{font-size: 25px; font-weight: 600;}
-	.single-slide-item p{font-size: 12px;}
+	.slider-section h1{font-size: 25px; font-weight: 600;}
+	.slider-section p{font-size: 12px;}
 }
 @media only screen and (max-width:480px){ 
 
