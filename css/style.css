@@ -446,8 +446,8 @@ p {
 }
 
 .navbar-default .navbar-nav > li > .btn{
-    margin: 5px;
-    padding: 10px;
+    margin: 8px 5px;
+    padding: 6px 10px;
     outline: none;
 }
 
@@ -469,7 +469,7 @@ p {
 .main_header.sticky_menu .navbar-nav > li > .btn,
 .main_header.sticky_menu .navbar-nav > li > .btn:hover,
 .main_header.sticky_menu .navbar-nav > li > .btn:focus {
-    color: #000 !important;
+    color: #fff !important;
 }
 
 /* Portrait and Landscape */
@@ -608,7 +608,7 @@ p {
 .inner-slide-blocks:after{
 	content: "";
     position: absolute;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.7);
     left: 0;
     top: 0;
     width: 100%;
@@ -716,11 +716,11 @@ p {
     text-align: justify;
 }
 .inner-slide-blocks span.begin{
-	color: var(--primary-color);
+	color: rgb(88 171 243);
 }
 /* color: #5cb85c; */
 .inner-slide-blocks span.end{
-    color: #63BA84;
+    color: #f0ad4e;
 }
 .inner-slide-blocks .btn-slider{
 	background: transparent;
