@@ -1485,6 +1485,9 @@ rgba(127, 183, 223, 0.5) */
     font-weight: 500;
     margin: 1.5em 0;
 }
+.footer-wrapper .email-block a{
+    margin-top: 8px;
+}
 .footer-wrapper .social-media-block p{
     margin: 35px 0;
 }
