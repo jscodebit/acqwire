@@ -818,8 +818,6 @@ p {
 * ----------------------------------------------------------------------------------------
 */
 
-
-
 /*
 * ----------------------------------------------------------------------------------------
 * 04. START ABOUT DESIGN
@@ -850,10 +848,10 @@ p {
 .dark_bg .single_about .about_title .description{
 	color: #fff;
 }
-/* END ABOUT */
+
 /*
 * ----------------------------------------------------------------------------------------
-* 04. END FEATURE AND ABOUT DESIGN
+* 04. END ABOUT DESIGN
 * ----------------------------------------------------------------------------------------
 */
 
@@ -932,7 +930,7 @@ p {
 
 /*
 * ----------------------------------------------------------------------------------------
-* 05. START PROGRAMS DESIGN
+* 06. START PROGRAMS DESIGN
 * ----------------------------------------------------------------------------------------
 */
 .program-card-wrapper {
@@ -1068,7 +1066,7 @@ p {
 } */
 /*
 * ----------------------------------------------------------------------------------------
-* 05. END PROGRAMS DESIGN
+* 06. END PROGRAMS DESIGN
 * ----------------------------------------------------------------------------------------
 */
 
@@ -1130,7 +1128,7 @@ p {
 
 /*
 * ----------------------------------------------------------------------------------------
-* 06. START COUNTERUP DESIGN
+* 08. START COUNTERUP DESIGN
 * ----------------------------------------------------------------------------------------
 */
 /* rgba(0, 0, 0, 0.8)
@@ -1169,13 +1167,13 @@ rgba(127, 183, 223, 0.5) */
 }
 /*
 * ----------------------------------------------------------------------------------------
-* 06. END COUNTERUP DESIGN
+* 08. END COUNTERUP DESIGN
 * ----------------------------------------------------------------------------------------
 */
 
 /*
 * ----------------------------------------------------------------------------------------
-* 08. START CAREER DESIGN
+* 09. START CAREER DESIGN
 * ----------------------------------------------------------------------------------------
 */
 .career-wrapper {
@@ -1211,13 +1209,13 @@ rgba(127, 183, 223, 0.5) */
 
 /*
 * ----------------------------------------------------------------------------------------
-* 08. END CAREER DESIGN
+* 09. END CAREER DESIGN
 * ----------------------------------------------------------------------------------------
 */
 
 /*
 * ----------------------------------------------------------------------------------------
-* 09. START PRICING TABLE DESIGN
+* 10. START PRICING TABLE DESIGN
 * ----------------------------------------------------------------------------------------
 */
 .pricingTable{
@@ -1365,15 +1363,18 @@ rgba(127, 183, 223, 0.5) */
 }
 /*
 * ----------------------------------------------------------------------------------------
-* 09. END PRICING TABLE DESIGN
+* 10. END PRICING TABLE DESIGN
 * ----------------------------------------------------------------------------------------
 */
 
 /*
 * ----------------------------------------------------------------------------------------
-* 10. START TESTIMONIAL DESIGN
+* 11. START TESTIMONIAL DESIGN
 * ----------------------------------------------------------------------------------------
 */
+#testimonial {
+    display: none;
+}
 .testi_overlay {
     background: rgba(0, 0, 0, 0.5) none repeat scroll 0 0;
     padding: 20px 0;
@@ -1445,152 +1446,47 @@ rgba(127, 183, 223, 0.5) */
 }
 /*
 * ----------------------------------------------------------------------------------------
-* 10. END TESTIMONIAL DESIGN
+* 11. END TESTIMONIAL DESIGN
 * ----------------------------------------------------------------------------------------
 */
 
-/*
-* ----------------------------------------------------------------------------------------
-* 11. START BLOG DESIGN
-* ----------------------------------------------------------------------------------------
-*/
-.post-slide {
-    transition: all 0.30s ease 0s;
-    box-shadow: 0 0 20px rgba(0,0,0, 0.05);
-}
-.dark_bg .post-slide{
-	border: 1px solid #384967;
-}
-.post-slide:hover{
-    transform: translateY(-10px);
-}
-.post-slide .post-img {
-    position: relative;
-}
-.post-slide .post-img img{
-    width: 100%;
-    height: auto;
-}
-.post-slide .post-img:after{
-    content: "";
-    position: absolute;
-    width:100%;
-    height:100%;
-    top:0;
-    left:0;
-	opacity: 0;
-    background: rgba(7, 1, 90, 0.6);
-    transition:  all 0.30s ease 0s;
-}
-.post-slide:hover .post-img:after{
-    opacity: 1;
-}
-.post-slide .icons{
-    position: absolute;
-    bottom: -16px;
-    left: 30px;
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
-    overflow: hidden;
-    z-index:1;
-}
-.post-slide .icons img{
-    width: 100%;
-    height: auto;
-}
-.post-slide .post-review{
-    border-top: none;
-    padding: 35px 20px 25px;
-    background: #fff;
-    position:relative;
-}
-.dark_bg .post-slide .post-review{
-	background: transparent;
-}
-.post-slide .post-bar{
-    padding: 0;
-    list-style: none;
-}
-.post-slide .post-bar li {
-    display: inline-block;
-    font-size: 15px;
-    color: #555;
-    margin-right: 10px;
-    text-transform: capitalize;
-}
-.dark_bg .post-slide .post-bar li{
-	color: var(--primary-color);
-}
-.post-slide .post-bar li i{
-    color: var(--primary-color);
-    margin-right: 8px;
-}
-.post-slide .post-title {
-    margin: 0 0 15px 0px;
-    color: #222;
-    text-transform: capitalize;
-    font-weight: 600;
-    font-size: 22px;
-}
-.dark_bg .post-slide .post-title{
-	color: #fff;
-}
-.post-slide .read{
-    text-transform: capitalize;
-    font-size: 15px;
-    font-weight: 600;
-    color: var(--primary-color);
-}
-.dark_bg .post-slide .read{
-	color: #fff;
-}
-.post-slide .read i{
-    margin-left: 10px;
-}
-.post-slide .post-description{
-	margin-bottom: 10px;
-}
-.dark_bg .post-slide .post-description{
-	color: #fff;
-}
-.post-slide .read{
-	transition: all 0.4s; 
-}
-.post-slide .read:hover{
-    text-decoration: none;
-    color: #333;
-}
-.dark_bg .post-slide .read:hover{
-	color: var(--primary-color);
-	text-decoration: none;
-}
-/*
-* ----------------------------------------------------------------------------------------
-* 11. END BLOG DESIGN
-* ----------------------------------------------------------------------------------------
-*/
 
 /*
 * ----------------------------------------------------------------------------------------
-* 14. START COPYRIGHT DESIGN
+* 12. START COPYRIGHT DESIGN
 * ----------------------------------------------------------------------------------------
 */
 .footer-wrapper{
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 .footer-wrapper * {
     color: #fff;
 }
-.footer-wrapper .logo-block p{
-    margin-top: 12px;
+.footer-wrapper .logo-block p {
+    margin-top: 10px;
+    margin-left: 3em;
+}
+.footer-wrapper .logo-block p i {
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    border-radius: 50%;
+    background: transparent;
+    border: 1px solid #fff;
+    text-align: center;
+    transition: all 0.4s ease;
+    font-size: 12px;
+    display: inline-block;
+    color: #fff;
+    margin-right: 10px;
 }
 .footer-wrapper .email-block h4{
+    font-weight: 500;
     margin: 1.5em 0;
 }
 .footer-wrapper .social-media-block p{
-    margin: 18px 0;
+    margin: 35px 0;
 }
 .copyright_area{
     background: #20242a;
@@ -1608,10 +1504,9 @@ rgba(127, 183, 223, 0.5) */
 }
 .copy_text p{
 	color: #fff;
-	margin-top: 20px;
-	padding-bottom: 2px;
+	margin: 20px 0;
 }
-.copyright_area i {
+.copyright_area .social-media-block i {
     width: 50px;
     height: 50px;
     line-height: 50px;
@@ -1624,7 +1519,6 @@ rgba(127, 183, 223, 0.5) */
     display: inline-block;
     color: #fff;
     margin: 10px;
-}
 }
 .copyright {
     border-top: 1px solid #5a5959;
@@ -1677,13 +1571,13 @@ rgba(127, 183, 223, 0.5) */
 }
 /*
 * ----------------------------------------------------------------------------------------
-* 14. END COPYRIGHT DESIGN
+* 12. END COPYRIGHT DESIGN
 * ----------------------------------------------------------------------------------------
 */
 
 /*
 * ----------------------------------------------------------------------------------------
-* 14. START DIALOG BOX DESIGN
+* 13. START DIALOG BOX DESIGN
 * ----------------------------------------------------------------------------------------
 */
 .checkbox-inline {
@@ -1750,6 +1644,6 @@ rgba(127, 183, 223, 0.5) */
   
 /*
 * ----------------------------------------------------------------------------------------
-* 14. END DIALOG BOX DESIGN
+* 13. END DIALOG BOX DESIGN
 * ----------------------------------------------------------------------------------------
 */
